@@ -1,3 +1,4 @@
+import Link from './link';
 import './nav.css'
 
 const Nav = () => {
@@ -7,14 +8,14 @@ const Nav = () => {
                 <h4>color flipper</h4>
                 <ul className="nav-links">
                     <li>
-                    <a href="">
+                    <Link href="/index">
                         simple
-                    </a>
+                    </Link>
                     </li>
                     <li>
-                    <a href="">
+                    <Link href="/hex">
                         hex
-                    </a>
+                    </Link>
                     </li>
                 </ul>
             </div>
