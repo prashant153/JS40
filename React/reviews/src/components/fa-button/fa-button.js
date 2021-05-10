@@ -1,13 +1,14 @@
-const Fabutton = () => {
+import './fa-button.css';
+
+const Fabutton = ({buttonClass, iClass, onClick}) => {            
+    const handleClick = (e) => {
+        e.preventDefault();        
+        onClick();
+    };
     return(
-        <div className="btn-container">
-            <button className="prev-btn">
-                <i className="fas fa-chevron-left"></i>
-            </button>
-            <button className="next-btn">
-                <i className="fas fa-chevron-right"></i>
-            </button>
-        </div>
+        <button className={`${buttonClass}-btn`} onClick={handleClick}>
+            <i className={`fas fa-chevron-${iClass}`}></i>
+        </button>             
     )
 };
 

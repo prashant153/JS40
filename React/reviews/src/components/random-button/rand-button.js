@@ -1,6 +1,11 @@
-const Randbutton = () => {
+import './rand-button.css';
+
+const Randbutton = ({onClick}) => {
+    const handleClick = () => {
+        onClick();
+    };
     return(
-        <button className="random-btn">surprise me</button>
+        <button className="random-btn" onClick={handleClick}>surprise me</button>
     );
 };
 
